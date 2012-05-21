@@ -15,7 +15,7 @@ start() {
   END {
     mem_per_cpu = sprintf("%d", mem_total / cpucount)
 
-    system("modprobe zram zram_num_devices=" cpucount)
+    system("modprobe zram num_devices=" cpucount)
 
     for (i = 0; i < cpucount; i++) {
       print mem_per_cpu > "/sys/block/zram" i "/disksize"
