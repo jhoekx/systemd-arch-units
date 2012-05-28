@@ -44,24 +44,8 @@ As an example, here's a (my) simple setup:
 
 HOW TO CONTRIBUTE
 ----------------------------------------
-So you've got a new unit to two you'd like to contribute. Great! However,
-there's a few things to keep in mind:
-
-1) Only Arch Linux benefits if you submit your unit files here. Everyone
-using systemd can benefit if you submit your unit file to the upstream
-project. Once it's accepted and released by upstream, open a feature request
-on Arch's Flyspray to have it included in the repo package.
-2) Unit files for packages in the AUR will not be accepted. Should #1 fail
-for whatever reason, please contact the maintainer on the AUR and have them
-include the units.
-3) If you're still keen on submitting your units here, please start a new
-branch for your work off of master and create a single commit for each unit
-file. If you need to make revisions, rebase and squash them into a single
-commit.
-4) I WILL NOT, under any circumstances, accept tmpfiles with your services
-if the managed files/directories are not root owned. Zero exceptions.
-5) Test your work. I cannot stress this enough.
-
+As of 5/28/12, I am no longer accepting NEW unit files here. Please submit them
+upstream, and failing that, to Arch Linux directly.
 
 LEGAL CRAP
 ----------------------------------------
