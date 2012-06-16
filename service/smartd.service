@@ -1,9 +1,0 @@
-[Unit]
-Description=SMART Monitoring Daemon
-
-[Service]
-EnvironmentFile=/etc/conf.d/smartd
-ExecStart=/usr/sbin/smartd -n $SMARTD_ARGS
-
-[Install]
-WantedBy=multi-user.target
