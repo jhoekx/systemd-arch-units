@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
 . /etc/conf.d/postgresql
+
+PGROOT=${PGROOT:-/var/lib/postgres}
 
 # 2nd clause is necessary to prevent symlinking the directory to itself when it
 # doesn't exist yet
